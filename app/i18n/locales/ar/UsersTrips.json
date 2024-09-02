@@ -1,0 +1,37 @@
+{
+    "loading": "جاري التحميل...",
+    "error": {
+      "fetchFailed": "فشل في جلب تفاصيل الرحلة.",
+      "message": "خطأ: {{message}}"
+    },
+    "trip": {
+      "notFound": "لم يتم العثور على تفاصيل الرحلة.",
+      "status": {
+        "start": "بداية",
+        "finished": "منتهي",
+        "notStarted": "لم يبدأ"
+      },
+      "startDate": "تاريخ البدء: {{date}}",
+      "endDate": "تاريخ الانتهاء: {{date}}",
+      "state": "الحالة: {{status}}",
+      "totalPersonnel": "إجمالي الأفراد: {{count}}",
+      "imageAlt": "صورة الرحلة {{index}}"
+    },
+    "details": {
+      "title": "تفاصيل لـ {{name}}"
+    },
+    "rating": {
+      "title": "تقييم"
+    },
+    "table": {
+      "title": "جدول الرحلات",
+      "name": "الاسم",
+      "email": "البريد الإلكتروني",
+      "image": "الصورة",
+      "phone": "الهاتف",
+      "personal": "الأفراد",
+      "actions": "الإجراءات",
+      "whatsappText": "مرحبا"
+    }
+  }
+  

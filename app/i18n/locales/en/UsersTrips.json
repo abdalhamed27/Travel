@@ -1,0 +1,37 @@
+{
+    "loading": "Loading...",
+    "error": {
+      "fetchFailed": "Failed to fetch trip details.",
+      "message": "Error: {{message}}"
+    },
+    "trip": {
+      "notFound": "No trip details found.",
+      "status": {
+        "start": "Start",
+        "finished": "Finished",
+        "notStarted": "Not Started"
+      },
+      "startDate": "Start Date: {{date}}",
+      "endDate": "End Date: {{date}}",
+      "state": "State: {{status}}",
+      "totalPersonnel": "Total Personnel: {{count}}",
+      "imageAlt": "Trip image {{index}}"
+    },
+    "details": {
+      "title": "Details for {{name}}"
+    },
+    "rating": {
+      "title": "Rating"
+    },
+    "table": {
+      "title": "Trips Table",
+      "name": "Name",
+      "email": "Email",
+      "image": "Image",
+      "phone": "Phone",
+      "personal": "Personal",
+      "actions": "Actions",
+      "whatsappText": "Hello"
+    }
+  }
+  

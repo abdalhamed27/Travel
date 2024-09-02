@@ -1,0 +1,22 @@
+{
+    "Name": "الاسم",
+    "Description": "الوصف",
+    "Day": "اليوم",
+    "Price": "السعر",
+    "Rating": "التقييم",
+    "Available": "متاح",
+    "End Date": "تاريخ الانتهاء",
+    "Actions": "الإجراءات",
+    "Trips": "رحلات",
+    "AddNewTrip": "إضافة رحلة جديدة",
+        "Edit": "تعديل",
+        "Upload Images": "تحميل الصور",
+        "Image Previews": "معاينات الصور",
+        "Existing Images": "الصور الموجودة",
+        "Submit": "إرسال",        
+        "Close": "إغلاق",
+        "UpdateTrip": "تحديث الرحلة"
+
+    
+
+}

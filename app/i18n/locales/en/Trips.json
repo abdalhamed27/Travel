@@ -1,0 +1,21 @@
+{
+    "Name": "Name",
+    "Description": "Description",
+    "Day": "Day",
+    "Price": "Price",
+    "Rating": "Rating",
+    "Available": "Available",
+    "End Date": "End Date",
+    "Actions": "Actions",
+    "Trips": "Trips",
+    "AddNewTrip":"Add New Trip",
+    "Edit": "Edit",
+    "Upload Images": "Upload Images",
+    "Image Previews": "Image Previews",
+    "Existing Images": "Existing Images",
+    "Submit": "Submit",
+    "Close": "Close",
+    "UpdateTrip": "Update Trip "
+
+
+}
