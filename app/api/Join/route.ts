@@ -22,7 +22,7 @@ export async function GET(req: NextRequest, { params }: { params: { id: string; 
     const joinExists = await Join.exists({
       trip_id: id,
       user_id: user._id,
-    });
+    });   
 
     if (!joinExists) {
       return NextResponse.json({ Joins: false }, { status: 200 });
