@@ -34,6 +34,6 @@ export async function GET(req: NextRequest) {
 
   } catch (error) {
     console.error('Error fetching join data:', error);
-    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+    return NextResponse.json({ error:  error }, { status: 500 });
   } 
 };  
