@@ -39,7 +39,7 @@ const TripDetails: React.FC = () => {
       try {
         const response = await axios.get(`/api/trips/${id}`);
         setTrip(response.data.trip);
-
+ 
         if (session?.user) {
           const responses = await axios.get(`/api/Join`, { params: { email: session?.user?.email, id: response.data.trip._id } });
           if(responses){
