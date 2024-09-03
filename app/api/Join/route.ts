@@ -1,18 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import mongoose from 'mongoose';
 import { connectToMongoDB } from '@/lib/db'; // Ensure this function is correctly defined
 import Join from '@/models/Join';
 import User from '@/models/User';
 
-// DELETE request handler
-export async function GET(req: NextRequest, { params }: { params: { id: string,email:string } }) {
-
-
-
+// GET request handler
+export async function GET(req: NextRequest, { params }: { params: { id: string; email: string } }) {
   try {
     await connectToMongoDB();
-    const { email } = params;
-    const { id } = params;
+
+    const { email, id } = params;
 
     if (!email || !id) {
       return NextResponse.json({ error: 'Missing email or id parameter' }, { status: 400 });
@@ -23,12 +19,12 @@ export async function GET(req: NextRequest, { params }: { params: { id: string,e
       return NextResponse.json({ error: 'User not found' }, { status: 404 });
     }
 
-    const joins = await Join.find({
+    const joinExists = await Join.exists({
       trip_id: id,
       user_id: user._id,
     });
 
-    if (joins.length === 0) {
+    if (!joinExists) {
       return NextResponse.json({ Joins: false }, { status: 200 });
     }
 

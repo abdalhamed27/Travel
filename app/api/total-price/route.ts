@@ -1,16 +1,16 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { connectToMongoDB } from '@/lib/db'; // Adjust path to your connectToMongoDB function
 import User from '@/models/User'; // Adjust path to your User model
 import Join from '@/models/Join'; // Adjust path to your Join model
 import Trip from '@/models/Trip'; // Adjust path to your Trip model
 
-export const GET = async (request: Request) => {
-  await connectToMongoDB(); // Connect to MongoDB
+export async function GET(req: NextRequest, { params }: { params: { email:string } }) {
+
+
 
   try {
-    const url = new URL(request.url);
-    const email = url.searchParams.get('email'); // Retrieve user email from query parameters
-
+    await connectToMongoDB();
+    const { email } = params;
     if (!email) {
       return NextResponse.json({ error: 'Email query parameter is required' }, { status: 400 });
     }
