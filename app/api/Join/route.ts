@@ -26,7 +26,9 @@ export async function GET(req: NextRequest, { params }: { params: { id: string; 
 
     if (!joinExists) {
       return NextResponse.json({ Joins: false }, { status: 200 });
-    }
+    } 
+
+    
 
     return NextResponse.json({ Joins: true }, { status: 200 });
 
