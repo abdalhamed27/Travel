@@ -42,7 +42,13 @@ const TripDetails: React.FC = () => {
 
         if (session?.user) {
           const responses = await axios.get(`/api/Join`, { params: { email: session?.user?.email, id: response.data.trip._id } });
+          if(responses){
           setJoin(responses.data.Joins);
+
+          }else{
+            setJoin(false);
+
+          }
         }
       } catch (err) {
         setError('Failed to fetch trip details.');
